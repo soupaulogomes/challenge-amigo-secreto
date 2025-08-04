@@ -50,6 +50,8 @@ function sortearAmigo() {
   nameSorted.innerHTML = `O nome sorteado é: <strong>${drawnName}</strong>`;
 
   names.splice(randomIndex, 1);
+
+  inputListName();
 }
 
 document.addEventListener('DOMContentLoaded', function() {

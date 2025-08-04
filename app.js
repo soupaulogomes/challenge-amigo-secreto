@@ -20,7 +20,7 @@ function validateInput() {
         inputName.focus();
         return false;
     }
-    if (names.includes(inputName.value.trim())) {
+    if (names.some(name => name.toLowerCase() === inputName.value.trim().toLowerCase())) {
         alert('Este nome já foi adicionado. Por favor, digite um nome diferente.');
         inputName.focus();
         return false;
